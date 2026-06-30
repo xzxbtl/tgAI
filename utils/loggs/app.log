@@ -1,0 +1,379 @@
+2026-06-26 11:34:28,636 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:24
+2026-06-26 11:34:28,637 - app - INFO - Файлов для транскрибации: 1. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:38
+2026-06-26 11:36:07,827 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:24
+2026-06-26 11:36:07,828 - app - INFO - Файлов для транскрибации: 1. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:38
+2026-06-26 11:36:07,828 - app - INFO - Успешно обработкан файл: # 1. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:52
+2026-06-26 11:36:30,232 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:24
+2026-06-26 11:36:30,232 - app - INFO - Файлов для транскрибации: 1. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:38
+2026-06-26 11:38:01,788 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:24
+2026-06-26 11:38:01,788 - app - INFO - Файлов для транскрибации: 1. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:38
+2026-06-26 11:39:28,443 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:24
+2026-06-26 11:39:28,444 - app - INFO - Файлов для транскрибации: 1. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:38
+2026-06-26 11:39:38,965 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:24
+2026-06-26 11:39:38,965 - app - INFO - Файлов для транскрибации: 1. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:38
+2026-06-26 11:40:36,291 - app - INFO - Успешно обработкан файл: # 1. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:53
+2026-06-26 11:54:52,361 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:24
+2026-06-26 11:54:52,361 - app - INFO - Файлов для транскрибации: 1. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:38
+2026-06-26 11:55:52,173 - app - INFO - Успешно обработан файл: # 1. Текст сохранен в dialogue.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:88
+2026-06-26 13:31:37,451 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:23
+2026-06-26 13:31:37,452 - app - INFO - Файлов для транскрибации: 1. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:37
+2026-06-26 13:33:09,381 - app - INFO - Успешно обработан файл: # 1. Текст сохранен в text.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:86
+2026-06-26 13:35:32,595 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:26
+2026-06-26 13:35:32,595 - app - INFO - Файлов для транскрибации: 1. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:40
+2026-06-26 13:36:50,636 - app - INFO - Успешно обработан файл: # 1. Текст сохранен в dialogue.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:89
+2026-06-29 14:19:44,773 - app - INFO - 🔄 Пробуем подключиться через прокси: http://user401975:if26ez@85.115.208.50:4990 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:19:45,106 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:19:45,106 - app - INFO - 🔄 Пробуем подключиться через прокси: http://fZM3hu:eC4AoG@196.18.13.244:8000 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:21:05,423 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:21:05,753 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:175
+2026-06-29 14:21:05,753 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 22.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:181
+2026-06-29 14:21:05,861 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:190
+2026-06-29 14:21:05,862 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:191
+2026-06-29 14:21:05,903 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:280
+2026-06-29 14:21:05,926 - app - INFO - 🔄 Пробуем подключиться через прокси: http://user401975:if26ez@85.115.208.50:4990 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:21:05,926 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:175
+2026-06-29 14:21:05,926 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 22.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:181
+2026-06-29 14:21:06,014 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:190
+2026-06-29 14:21:06,015 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:191
+2026-06-29 14:21:06,029 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:280
+2026-06-29 14:21:06,042 - app - INFO - 🔄 Пробуем подключиться через прокси: http://fZM3hu:eC4AoG@196.18.13.244:8000 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:21:06,042 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:175
+2026-06-29 14:21:06,042 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 22.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:181
+2026-06-29 14:21:06,109 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:190
+2026-06-29 14:21:06,109 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:191
+2026-06-29 14:21:06,124 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:280
+2026-06-29 14:23:51,653 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:23:51,981 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:194
+2026-06-29 14:23:51,981 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 22.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:200
+2026-06-29 14:23:52,146 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:209
+2026-06-29 14:23:52,146 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:210
+2026-06-29 14:23:52,181 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:213
+2026-06-29 14:23:52,209 - app - INFO - 📨 Найдено непрочитанных писем: 1 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:222
+2026-06-29 14:23:52,209 - app - INFO - 🔄 🆔 Начало обработки письма UID=46 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:230
+2026-06-29 14:23:52,233 - app - INFO - 📌 Скачиваем тело подходящего письма UID=46 для xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:102
+2026-06-29 14:23:52,299 - app - INFO - 🧹 Письмо UID=46 успешно обработано, скопировано в Trash и удалено из INBOX. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:285
+2026-06-29 14:23:52,299 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:299
+2026-06-29 14:23:52,313 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:65
+2026-06-29 14:26:51,204 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:26:51,532 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:230
+2026-06-29 14:26:51,532 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 22.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:236
+2026-06-29 14:26:51,602 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:245
+2026-06-29 14:26:51,602 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:246
+2026-06-29 14:26:51,638 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:249
+2026-06-29 14:26:51,665 - app - INFO - 📨 Найдено непрочитанных писем: 0 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:258
+2026-06-29 14:26:51,666 - app - INFO - ℹ️ Нет новых писем для обработки. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:261
+2026-06-29 14:26:51,666 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:335
+2026-06-29 14:26:51,680 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:65
+2026-06-29 14:27:56,738 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:27:57,071 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:230
+2026-06-29 14:27:57,072 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 22.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:236
+2026-06-29 14:27:57,181 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:245
+2026-06-29 14:27:57,181 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:246
+2026-06-29 14:27:57,233 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:249
+2026-06-29 14:27:57,277 - app - INFO - 📨 Найдено непрочитанных писем: 0 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:258
+2026-06-29 14:27:57,278 - app - INFO - ℹ️ Нет новых писем для обработки. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:261
+2026-06-29 14:27:57,278 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:335
+2026-06-29 14:27:57,300 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:65
+2026-06-29 14:28:15,890 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:28:16,223 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:194
+2026-06-29 14:28:16,223 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 22.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:200
+2026-06-29 14:28:16,346 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:209
+2026-06-29 14:28:16,347 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:210
+2026-06-29 14:28:16,409 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:213
+2026-06-29 14:28:16,463 - app - INFO - 📨 Найдено непрочитанных писем: 1 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:222
+2026-06-29 14:28:16,463 - app - INFO - 🔄 🆔 Начало обработки письма UID=46 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:230
+2026-06-29 14:28:16,491 - app - INFO - 📌 Скачиваем тело подходящего письма UID=46 для xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:102
+2026-06-29 14:28:18,638 - app - INFO - 📦 Найден медиафайл: compressed.mp3 -> сохранен как 8a4cc0e76d1e4c2da231d7732b45af8d.mp3 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:143
+2026-06-29 14:28:18,638 - app - INFO - 🎙️ UID=46: Старт транскрибации через ElevenLabs... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:153
+2026-06-29 14:28:18,639 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:28
+2026-06-29 14:29:12,200 - app - INFO - Успешно обработан файл: 8a4cc0e76d1e4c2da231d7732b45af8d.mp3. Текст сохранен в 8a4cc0e76d1e4c2da231d7732b45af8d.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:80
+2026-06-29 14:29:12,202 - app - INFO - 🤖 UID=46: Старт генерации отчета через GPT... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:159
+2026-06-29 14:29:12,202 - app - INFO - Успешное создание GPT клиента. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:41
+2026-06-29 14:29:36,826 - app - INFO - 📌 Скачиваем тело подходящего письма UID=46 для xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:102
+2026-06-29 14:29:39,287 - app - INFO - 📦 Найден медиафайл: compressed.mp3 -> сохранен как dae4a97f6d734892ae6accc6abb327d7.mp3 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:143
+2026-06-29 14:29:39,287 - app - INFO - 🎙️ UID=46: Старт транскрибации через ElevenLabs... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:153
+2026-06-29 14:29:39,288 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:28
+2026-06-29 14:29:43,074 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:299
+2026-06-29 14:30:57,167 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:30:57,497 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:194
+2026-06-29 14:30:57,498 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 22.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:200
+2026-06-29 14:30:57,607 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:209
+2026-06-29 14:30:57,608 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:210
+2026-06-29 14:30:57,663 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:213
+2026-06-29 14:30:57,710 - app - INFO - 📨 Найдено непрочитанных писем: 0 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:222
+2026-06-29 14:30:57,710 - app - INFO - ℹ️ Нет новых писем для обработки. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:225
+2026-06-29 14:30:57,711 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:299
+2026-06-29 14:30:57,733 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:65
+2026-06-29 14:31:37,954 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:31:38,288 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:194
+2026-06-29 14:31:38,288 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 22.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:200
+2026-06-29 14:31:38,362 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:209
+2026-06-29 14:31:38,362 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:210
+2026-06-29 14:31:38,397 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:213
+2026-06-29 14:31:38,426 - app - INFO - 📨 Найдено непрочитанных писем: 0 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:222
+2026-06-29 14:31:38,426 - app - INFO - ℹ️ Нет новых писем для обработки. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:225
+2026-06-29 14:31:38,427 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:299
+2026-06-29 14:31:38,441 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:65
+2026-06-29 14:31:44,825 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:31:45,152 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:194
+2026-06-29 14:31:45,152 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 22.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:200
+2026-06-29 14:31:45,229 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:209
+2026-06-29 14:31:45,229 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:210
+2026-06-29 14:31:45,266 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:213
+2026-06-29 14:31:45,293 - app - INFO - 📨 Найдено непрочитанных писем: 0 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:222
+2026-06-29 14:31:45,293 - app - INFO - ℹ️ Нет новых писем для обработки. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:225
+2026-06-29 14:31:45,293 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:299
+2026-06-29 14:31:45,306 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:65
+2026-06-29 14:33:04,495 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:33:04,826 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:194
+2026-06-29 14:33:04,826 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 22.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:200
+2026-06-29 14:33:04,934 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:209
+2026-06-29 14:33:04,935 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:210
+2026-06-29 14:33:04,987 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:213
+2026-06-29 14:33:05,033 - app - INFO - 📨 Найдено непрочитанных писем: 2 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:222
+2026-06-29 14:33:05,034 - app - INFO - 🔄 🆔 Начало обработки письма UID=48 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:230
+2026-06-29 14:33:05,057 - app - INFO - 📌 Скачиваем тело подходящего письма UID=48 для xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:102
+2026-06-29 14:33:06,904 - app - INFO - 📦 Найден медиафайл: compressed.mp3 -> сохранен как 295b40d437ee44a78b4ada317995b8bd.mp3 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:143
+2026-06-29 14:33:06,904 - app - INFO - 🎙️ UID=48: Старт транскрибации через ElevenLabs... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:153
+2026-06-29 14:33:06,905 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:28
+2026-06-29 14:33:51,169 - app - INFO - Успешно обработан файл: 295b40d437ee44a78b4ada317995b8bd.mp3. Текст сохранен в 295b40d437ee44a78b4ada317995b8bd.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:80
+2026-06-29 14:33:51,170 - app - INFO - 🤖 UID=48: Старт генерации отчета через GPT... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:159
+2026-06-29 14:33:51,171 - app - INFO - Успешное создание GPT клиента. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:41
+2026-06-29 14:34:15,567 - app - INFO - 📌 Скачиваем тело подходящего письма UID=48 для xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:102
+2026-06-29 14:35:11,045 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 14:35:11,374 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:194
+2026-06-29 14:35:11,374 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 22.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:200
+2026-06-29 14:35:11,566 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:209
+2026-06-29 14:35:11,566 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:210
+2026-06-29 14:35:11,601 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:213
+2026-06-29 14:35:11,627 - app - INFO - 📨 Найдено непрочитанных писем: 1 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:222
+2026-06-29 14:35:11,628 - app - INFO - 🔄 🆔 Начало обработки письма UID=47 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:230
+2026-06-29 14:35:11,641 - app - INFO - 📌 Скачиваем тело подходящего письма UID=47 для xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:102
+2026-06-29 14:35:13,105 - app - INFO - 📦 Найден медиафайл: compressed.mp3 -> сохранен как 7b3b58a96bec4667a0cfabaa624e1245.mp3 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:143
+2026-06-29 14:35:13,105 - app - INFO - 🎙️ UID=47: Старт транскрибации через ElevenLabs... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:153
+2026-06-29 14:35:13,106 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:28
+2026-06-29 14:35:58,826 - app - INFO - Успешно обработан файл: 7b3b58a96bec4667a0cfabaa624e1245.mp3. Текст сохранен в 7b3b58a96bec4667a0cfabaa624e1245.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:80
+2026-06-29 14:35:58,827 - app - INFO - 🤖 UID=47: Старт генерации отчета через GPT... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:159
+2026-06-29 14:35:58,828 - app - INFO - Успешное создание GPT клиента. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:41
+2026-06-29 14:36:18,616 - app - INFO - Отформатированный отчет успешно сохранен в: C:\Users\user\PycharmProjects\TranscribeDialogs\app\transcription_text\ready_to_upload\reformated_7b3b58a96bec4667a0cfabaa624e1245.txt. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:69
+2026-06-29 14:36:18,616 - app - INFO - 📧 UID=47: Отправка ответа на xzxbtl@gmail.com... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:165
+2026-06-29 14:36:20,803 - app - INFO - 🧹 Письмо UID=47 успешно обработано, скопировано в Trash и удалено из INBOX. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:285
+2026-06-29 14:36:20,803 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:299
+2026-06-29 14:36:20,817 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:65
+2026-06-29 15:05:27,925 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-29 15:05:28,255 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:306
+2026-06-29 15:05:28,255 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 22.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:312
+2026-06-29 15:05:28,445 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:321
+2026-06-29 15:05:28,445 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:322
+2026-06-29 15:05:28,480 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:325
+2026-06-29 15:05:28,510 - app - INFO - 📨 Найдено непрочитанных писем: 1 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:334
+2026-06-29 15:05:28,510 - app - INFO - 🔄 🆔 Начало обработки письма UID=47 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:342
+2026-06-29 15:05:28,528 - app - INFO - 📌 Скачиваем тело письма UID=47 от xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:171
+2026-06-29 15:05:34,838 - app - INFO - 🎙️ UID=47: Старт транскрибации... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:246
+2026-06-29 15:05:34,839 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:28
+2026-06-29 15:07:01,509 - app - INFO - Успешно обработан файл: 24056eeb76e14bc28808301ad6b84f74.mp3. Текст сохранен в 24056eeb76e14bc28808301ad6b84f74.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:80
+2026-06-29 15:07:01,511 - app - INFO - 🤖 UID=47: Старт генерации отчета через GPT... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:252
+2026-06-29 15:07:01,512 - app - INFO - Успешное создание GPT клиента. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:40
+2026-06-29 15:07:18,750 - app - INFO - Отформатированный отчет успешно сохранен в: C:\Users\user\PycharmProjects\TranscribeDialogs\app\transcription_text\ready_to_upload\reformated_24056eeb76e14bc28808301ad6b84f74.txt. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:68
+2026-06-29 15:07:18,750 - app - INFO - 📧 UID=47: Отправка ответа на xzxbtl@gmail.com... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:261
+2026-06-29 15:07:20,688 - app - INFO - 📁 Финальный отчет отправлен и сохранен в: C:\Users\user\PycharmProjects\TranscribeDialogs\app\transcription_text\ready_to_upload\reformated_24056eeb76e14bc28808301ad6b84f74.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:269
+2026-06-29 15:07:20,746 - app - INFO - 🧹 Письмо UID=47 успешно обработано и удалено из INBOX. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:391
+2026-06-29 15:07:20,746 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:405
+2026-06-29 15:07:20,761 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:65
+2026-06-30 14:20:37,270 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:48
+2026-06-30 14:20:37,631 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:310
+2026-06-30 14:20:37,631 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 23.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:316
+2026-06-30 14:20:37,709 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:325
+2026-06-30 14:20:37,710 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:326
+2026-06-30 14:20:37,746 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:329
+2026-06-30 14:20:37,776 - app - INFO - 📨 Найдено непрочитанных писем: 1 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:338
+2026-06-30 14:20:37,777 - app - INFO - 🔄 🆔 Начало обработки письма UID=49 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:346
+2026-06-30 14:20:37,792 - app - INFO - 📌 Скачиваем тело письма UID=49 от xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:168
+2026-06-30 14:20:41,055 - app - INFO - 📦 Найдено вложение: 20260615_154807.m4a -> cc9a0466d914469e9f8f721f49750d66.m4a - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:227
+2026-06-30 14:20:41,055 - app - INFO - 🎙️ UID=49: Старт транскрибации... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:248
+2026-06-30 14:20:41,056 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:28
+2026-06-30 14:22:13,294 - app - INFO - Успешно обработан файл: cc9a0466d914469e9f8f721f49750d66.m4a. Текст сохранен в cc9a0466d914469e9f8f721f49750d66.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:80
+2026-06-30 14:22:13,296 - app - INFO - 🤖 UID=49: Старт генерации отчета через GPT... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:254
+2026-06-30 14:22:13,296 - app - INFO - Успешное создание GPT клиента. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:42
+2026-06-30 14:22:45,351 - app - INFO - Отформатированный отчет успешно сохранен в: C:\Users\user\PycharmProjects\TranscribeDialogs\app\reformatted_gpt\reformated_cc9a0466d914469e9f8f721f49750d66_2026-06-30.txt. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:70
+2026-06-30 14:22:45,351 - app - INFO - 📧 UID=49: Отправка ответа на xzxbtl@gmail.com... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:264
+2026-06-30 14:22:50,460 - app - INFO - 📁 Финальный отчет отправлен и сохранен в: C:\Users\user\PycharmProjects\TranscribeDialogs\app\reformatted_gpt\reformated_cc9a0466d914469e9f8f721f49750d66_2026-06-30.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:272
+2026-06-30 14:22:50,514 - app - INFO - 🧹 Письмо UID=49 успешно обработано и удалено из INBOX. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:395
+2026-06-30 14:22:50,514 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:409
+2026-06-30 14:22:50,527 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:65
+2026-06-30 15:54:24,014 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:58
+2026-06-30 15:54:24,347 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:311
+2026-06-30 15:54:24,347 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 23.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:317
+2026-06-30 15:54:24,554 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:328
+2026-06-30 15:54:24,555 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:329
+2026-06-30 15:54:24,593 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:332
+2026-06-30 15:54:24,625 - app - INFO - 📨 Найдено непрочитанных писем: 1 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:341
+2026-06-30 15:54:24,625 - app - INFO - 🔄 🆔 Начало обработки письма UID=49 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:349
+2026-06-30 15:54:24,644 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:433
+2026-06-30 15:54:24,659 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:75
+2026-06-30 16:06:40,022 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:58
+2026-06-30 16:06:40,345 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:316
+2026-06-30 16:06:40,345 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 23.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:322
+2026-06-30 16:06:40,599 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:333
+2026-06-30 16:06:40,599 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:334
+2026-06-30 16:06:40,659 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:337
+2026-06-30 16:06:40,714 - app - INFO - 📨 Найдено непрочитанных писем: 0 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:346
+2026-06-30 16:06:40,714 - app - INFO - ℹ️ Нет новых писем для обработки. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:349
+2026-06-30 16:06:40,717 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:438
+2026-06-30 16:06:40,744 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:75
+2026-06-30 16:06:52,689 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:58
+2026-06-30 16:06:53,009 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:316
+2026-06-30 16:06:53,009 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 23.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:322
+2026-06-30 16:06:53,089 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:333
+2026-06-30 16:06:53,089 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:334
+2026-06-30 16:06:53,124 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:337
+2026-06-30 16:06:53,154 - app - INFO - 📨 Найдено непрочитанных писем: 1 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:346
+2026-06-30 16:06:53,154 - app - INFO - 🔄 🆔 Начало обработки письма UID=49 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:354
+2026-06-30 16:06:53,170 - app - INFO - 📌 Скачиваем тело письма UID=49 от xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:174
+2026-06-30 16:06:55,595 - app - INFO - 📦 Найдено вложение: 20260615_154807.m4a -> 7ea0e2cb708043efa389e85376abc317.m4a - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:233
+2026-06-30 16:06:55,595 - app - INFO - 🎙️ UID=49: Старт транскрибации... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:254
+2026-06-30 16:06:55,596 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:28
+2026-06-30 16:08:18,738 - app - INFO - Успешно обработан файл: 7ea0e2cb708043efa389e85376abc317.m4a. Текст сохранен в 7ea0e2cb708043efa389e85376abc317.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:80
+2026-06-30 16:08:18,739 - app - INFO - 🤖 UID=49: Старт генерации отчета через GPT... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:260
+2026-06-30 16:08:18,740 - app - INFO - Успешное создание GPT клиента. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:47
+2026-06-30 16:08:45,354 - app - INFO - 📌 Скачиваем тело письма UID=49 от xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:174
+2026-06-30 16:10:16,940 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:58
+2026-06-30 16:10:17,265 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:316
+2026-06-30 16:10:17,265 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 23.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:322
+2026-06-30 16:10:17,342 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:333
+2026-06-30 16:10:17,342 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:334
+2026-06-30 16:10:17,378 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:337
+2026-06-30 16:10:17,406 - app - INFO - 📨 Найдено непрочитанных писем: 0 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:346
+2026-06-30 16:10:17,407 - app - INFO - ℹ️ Нет новых писем для обработки. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:349
+2026-06-30 16:10:17,408 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:438
+2026-06-30 16:10:17,423 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:75
+2026-06-30 16:12:00,367 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:58
+2026-06-30 16:12:00,682 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:316
+2026-06-30 16:12:00,683 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 23.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:322
+2026-06-30 16:12:00,772 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:333
+2026-06-30 16:12:00,773 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:334
+2026-06-30 16:12:00,810 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:337
+2026-06-30 16:12:00,841 - app - INFO - 📨 Найдено непрочитанных писем: 1 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:346
+2026-06-30 16:12:00,841 - app - INFO - 🔄 🆔 Начало обработки письма UID=50 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:354
+2026-06-30 16:12:00,858 - app - INFO - 📌 Скачиваем тело письма UID=50 от xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:174
+2026-06-30 16:12:14,088 - app - INFO - 📦 Найдено вложение: 20260615_154807.m4a -> 6226a7fa73334bebb875ade910c593f4.m4a - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:233
+2026-06-30 16:12:14,088 - app - INFO - 🎙️ UID=50: Старт транскрибации... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:254
+2026-06-30 16:12:14,088 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:28
+2026-06-30 16:13:26,739 - app - INFO - Успешно обработан файл: 6226a7fa73334bebb875ade910c593f4.m4a. Текст сохранен в 6226a7fa73334bebb875ade910c593f4.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:80
+2026-06-30 16:13:26,741 - app - INFO - 🤖 UID=50: Старт генерации отчета через GPT... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:260
+2026-06-30 16:13:26,741 - app - INFO - Успешное создание GPT клиента. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:47
+2026-06-30 16:13:48,318 - app - INFO - Отформатированный отчет успешно сохранен в: C:\Users\user\PycharmProjects\TranscribeDialogs\app\reformatted_gpt\reformated_6226a7fa73334bebb875ade910c593f4_2026-06-30.txt. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:101
+2026-06-30 16:13:48,319 - app - INFO - 📧 UID=50: Отправка ответа на xzxbtl@gmail.com с темой: Учет складов и разрывы в ERP... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:270
+2026-06-30 16:13:53,333 - app - INFO - 📌 Скачиваем тело письма UID=50 от xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:174
+2026-06-30 16:13:55,918 - app - INFO - 📦 Найдено вложение: 20260615_154807.m4a -> 3b4351abc9e945049afd4c96092638b2.m4a - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:233
+2026-06-30 16:13:55,918 - app - INFO - 🎙️ UID=50: Старт транскрибации... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:254
+2026-06-30 16:13:55,918 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:28
+2026-06-30 16:13:59,619 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:438
+2026-06-30 16:13:59,633 - app - INFO - 🔄 Пробуем подключиться через прокси: http://user401975:if26ez@85.115.208.50:4990 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:58
+2026-06-30 16:13:59,633 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:316
+2026-06-30 16:13:59,633 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 23.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:322
+2026-06-30 16:13:59,766 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:333
+2026-06-30 16:13:59,766 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:334
+2026-06-30 16:15:38,878 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:58
+2026-06-30 16:15:39,211 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:322
+2026-06-30 16:15:39,211 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 23.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:328
+2026-06-30 16:15:39,337 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:339
+2026-06-30 16:15:39,337 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:340
+2026-06-30 16:15:39,397 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:343
+2026-06-30 16:15:39,451 - app - INFO - 📨 Найдено непрочитанных писем: 0 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:352
+2026-06-30 16:15:39,451 - app - INFO - ℹ️ Нет новых писем для обработки. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:355
+2026-06-30 16:15:39,452 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:444
+2026-06-30 16:15:39,478 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:75
+2026-06-30 16:15:45,680 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:58
+2026-06-30 16:15:46,010 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:322
+2026-06-30 16:15:46,010 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 23.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:328
+2026-06-30 16:15:46,122 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:339
+2026-06-30 16:15:46,123 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:340
+2026-06-30 16:15:46,175 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:343
+2026-06-30 16:15:46,221 - app - INFO - 📨 Найдено непрочитанных писем: 0 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:352
+2026-06-30 16:15:46,221 - app - INFO - ℹ️ Нет новых писем для обработки. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:355
+2026-06-30 16:15:46,223 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:444
+2026-06-30 16:15:46,246 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:75
+2026-06-30 16:15:59,526 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:58
+2026-06-30 16:15:59,851 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:322
+2026-06-30 16:15:59,851 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 23.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:328
+2026-06-30 16:15:59,974 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:339
+2026-06-30 16:15:59,974 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:340
+2026-06-30 16:16:00,032 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:343
+2026-06-30 16:16:00,081 - app - INFO - 📨 Найдено непрочитанных писем: 1 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:352
+2026-06-30 16:16:00,081 - app - INFO - 🔄 🆔 Начало обработки письма UID=51 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:360
+2026-06-30 16:16:00,107 - app - INFO - 📌 Скачиваем тело письма UID=51 от xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:180
+2026-06-30 16:16:02,666 - app - INFO - 📦 Найдено вложение: 20260615_154807.m4a -> 897b7f04bc7f45eab63e3fe63198b1ed.m4a - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:239
+2026-06-30 16:16:02,666 - app - INFO - 🎙️ UID=51: Старт транскрибации... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:260
+2026-06-30 16:16:02,667 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:28
+2026-06-30 16:17:47,147 - app - INFO - Успешно обработан файл: 897b7f04bc7f45eab63e3fe63198b1ed.m4a. Текст сохранен в 897b7f04bc7f45eab63e3fe63198b1ed.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:80
+2026-06-30 16:17:47,149 - app - INFO - 🤖 UID=51: Старт генерации отчета через GPT... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:266
+2026-06-30 16:17:47,149 - app - INFO - Успешное создание GPT клиента. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:47
+2026-06-30 16:18:07,102 - app - INFO - Отформатированный отчет успешно сохранен в: C:\Users\user\PycharmProjects\TranscribeDialogs\app\reformatted_gpt\reformated_897b7f04bc7f45eab63e3fe63198b1ed_2026-06-30.txt. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:101
+2026-06-30 16:18:07,102 - app - INFO - 📧 UID=51: Отправка ответа на xzxbtl@gmail.com с темой: Учет сырья и продукции в ERP... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:276
+2026-06-30 16:18:12,112 - app - INFO - 📌 Скачиваем тело письма UID=51 от xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:180
+2026-06-30 16:22:45,636 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:58
+2026-06-30 16:22:45,974 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:323
+2026-06-30 16:22:45,974 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 23.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:329
+2026-06-30 16:22:46,145 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:340
+2026-06-30 16:22:46,146 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:341
+2026-06-30 16:22:46,182 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:344
+2026-06-30 16:22:46,211 - app - INFO - 📨 Найдено непрочитанных писем: 1 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:353
+2026-06-30 16:22:46,212 - app - INFO - 🔄 🆔 Начало обработки письма UID=52 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:361
+2026-06-30 16:22:46,229 - app - INFO - 📌 Скачиваем тело письма UID=52 от xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:181
+2026-06-30 16:22:48,657 - app - INFO - 📦 Найдено вложение: 20260615_154807.m4a -> 9ba394eb75c642cd82062d2756c5cba6.m4a - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:240
+2026-06-30 16:22:48,657 - app - INFO - 🎙️ UID=52: Старт транскрибации... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:261
+2026-06-30 16:22:48,658 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:28
+2026-06-30 16:24:16,999 - app - INFO - Успешно обработан файл: 9ba394eb75c642cd82062d2756c5cba6.m4a. Текст сохранен в 9ba394eb75c642cd82062d2756c5cba6.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:80
+2026-06-30 16:24:17,001 - app - INFO - 🤖 UID=52: Старт генерации отчета через GPT... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:267
+2026-06-30 16:24:17,002 - app - INFO - Успешное создание GPT клиента. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:47
+2026-06-30 16:24:34,028 - app - INFO - Отформатированный отчет успешно сохранен в: C:\Users\user\PycharmProjects\TranscribeDialogs\app\reformatted_gpt\reformated_9ba394eb75c642cd82062d2756c5cba6_2026-06-30.txt. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:101
+2026-06-30 16:24:34,028 - app - INFO - 📧 UID=52: Отправка ответа на xzxbtl@gmail.com с темой: Учет складов и разрывы в ERP... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:277
+2026-06-30 16:24:35,856 - app - INFO - 📁 Финальный отчет отправлен и сохранен в: C:\Users\user\PycharmProjects\TranscribeDialogs\app\reformatted_gpt\reformated_9ba394eb75c642cd82062d2756c5cba6_2026-06-30.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:285
+2026-06-30 16:24:35,937 - app - INFO - 🧹 Письмо UID=52 успешно обработано и удалено из INBOX. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:419
+2026-06-30 16:24:35,937 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:445
+2026-06-30 16:24:35,951 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:75
+2026-06-30 16:30:00,162 - app - INFO - Базовые адреса успешно проверены/добавлены в БД. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\database\core.py:47
+2026-06-30 16:30:00,162 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:57
+2026-06-30 16:30:00,531 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:322
+2026-06-30 16:30:00,531 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 23.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:328
+2026-06-30 16:30:00,631 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:338
+2026-06-30 16:30:00,631 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:339
+2026-06-30 16:30:00,679 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:342
+2026-06-30 16:30:00,716 - app - INFO - 📨 Найдено непрочитанных писем: 0 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:351
+2026-06-30 16:30:00,716 - app - INFO - ℹ️ Нет новых писем для обработки. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:354
+2026-06-30 16:30:00,716 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:440
+2026-06-30 16:30:00,735 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:74
+2026-06-30 16:30:06,935 - app - INFO - Базовые адреса успешно проверены/добавлены в БД. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\database\core.py:47
+2026-06-30 16:30:06,935 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:57
+2026-06-30 16:30:07,267 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:322
+2026-06-30 16:30:07,267 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 23.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:328
+2026-06-30 16:30:07,382 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:338
+2026-06-30 16:30:07,382 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:339
+2026-06-30 16:30:07,439 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:342
+2026-06-30 16:30:07,488 - app - INFO - 📨 Найдено непрочитанных писем: 1 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:351
+2026-06-30 16:30:07,488 - app - INFO - 🔄 🆔 Начало обработки письма UID=52 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:359
+2026-06-30 16:30:07,516 - app - INFO - 📌 Скачиваем тело письма UID=52 от xzxbtl@gmail.com - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:180
+2026-06-30 16:30:11,058 - app - INFO - 📦 Найдено вложение: 20260615_154807.m4a -> 1923b69048ae478daeee3399a78c2c59.m4a - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:239
+2026-06-30 16:30:11,058 - app - INFO - 🎙️ UID=52: Старт транскрибации... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:260
+2026-06-30 16:30:11,059 - app - INFO - Успешное создание клиента ElevenLabs. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:28
+2026-06-30 16:31:31,738 - app - INFO - Успешно обработан файл: 1923b69048ae478daeee3399a78c2c59.m4a. Текст сохранен в 1923b69048ae478daeee3399a78c2c59.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:80
+2026-06-30 16:31:31,741 - app - INFO - 🤖 UID=52: Старт генерации отчета через GPT... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:266
+2026-06-30 16:31:31,741 - app - INFO - Успешное создание GPT клиента. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:47
+2026-06-30 16:31:53,910 - app - INFO - Отформатированный отчет успешно сохранен в: C:\Users\user\PycharmProjects\TranscribeDialogs\app\reformatted_gpt\reformated_1923b69048ae478daeee3399a78c2c59_2026-06-30.txt. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:101
+2026-06-30 16:31:53,911 - app - INFO - 📧 UID=52: Отправка ответа на xzxbtl@gmail.com с темой: Учет складов и производства в ERP... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:276
+2026-06-30 16:31:55,707 - app - INFO - 📁 Финальный отчет отправлен и сохранен в: C:\Users\user\PycharmProjects\TranscribeDialogs\app\reformatted_gpt\reformated_1923b69048ae478daeee3399a78c2c59_2026-06-30.txt - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:284
+2026-06-30 16:31:55,825 - app - INFO - 🧹 Письмо UID=52 успешно обработано и удалено из INBOX. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:416
+2026-06-30 16:31:55,825 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:440
+2026-06-30 16:31:55,847 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:74
+2026-06-30 16:33:55,893 - app - INFO - Базовые адреса успешно проверены/добавлены в БД. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\database\core.py:48
+2026-06-30 16:33:55,893 - app - INFO - 🔄 Пробуем подключиться через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:57
+2026-06-30 16:33:56,231 - app - INFO - 🚀 Старт загрузки медиа-писем и генерации отчетов - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:322
+2026-06-30 16:33:56,231 - app - INFO - 🔎 Ищем непрочитанные письма за период с: 23.06.2026 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:328
+2026-06-30 16:33:56,422 - app - INFO - 🔌 Подключение к IMAP серверу - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:338
+2026-06-30 16:33:56,422 - app - INFO - 🔐 Аутентификация в IMAP - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:339
+2026-06-30 16:33:56,458 - app - INFO - 📬 Выбор папки: INBOX - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:342
+2026-06-30 16:33:56,488 - app - INFO - 📨 Найдено непрочитанных писем: 0 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:351
+2026-06-30 16:33:56,489 - app - INFO - ℹ️ Нет новых писем для обработки. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:354
+2026-06-30 16:33:56,489 - app - INFO - 🔌 Закрытие IMAP-соединения - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:440
+2026-06-30 16:33:56,503 - app - INFO - ✨ Весь почтовый пайплайн успешно отработал через прокси: http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:74

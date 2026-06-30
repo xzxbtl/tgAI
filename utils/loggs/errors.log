@@ -1,0 +1,819 @@
+2026-06-26 11:34:28,637 - app - ERROR - Ошибка транскрибации dialogue.mp3: 'coroutine' object has no attribute 'status_code' - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:56
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py", line 44, in create_transcript
+    response = eleven_labs_client.speech_to_text.convert(
+        model_id="scribe_v2",
+    ...<2 lines>...
+        file=file
+    )
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\elevenlabs\speech_to_text\client.py", line 177, in convert
+    _response = self._raw_client.convert(
+        model_id=model_id,
+    ...<25 lines>...
+        request_options=request_options,
+    )
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\elevenlabs\speech_to_text\raw_client.py", line 154, in convert
+    _response = self._client_wrapper.httpx_client.request(
+        "v1/speech-to-text",
+    ...<39 lines>...
+        force_multipart=True,
+    )
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\elevenlabs\core\http_client.py", line 301, in request
+    if _should_retry(response=response):
+       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\elevenlabs\core\http_client.py", line 123, in _should_retry
+    return response.status_code >= 500 or response.status_code in retryable_400s
+           ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'status_code'
+2026-06-26 11:36:30,460 - app - ERROR - Ошибка транскрибации dialogue.mp3: 'WindowsPath' object has no attribute 'read' - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:56
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py", line 44, in create_transcript
+    response = await eleven_labs_client.speech_to_text.convert(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\elevenlabs\speech_to_text\client.py", line 376, in convert
+    _response = await self._raw_client.convert(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<27 lines>...
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\elevenlabs\speech_to_text\raw_client.py", line 350, in convert
+    _response = await self._client_wrapper.httpx_client.request(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<41 lines>...
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\elevenlabs\core\http_client.py", line 477, in request
+    response = await self.httpx_client.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<33 lines>...
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpx\_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpx\_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpx\_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpx\_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpx\_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpx\_transports\default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        pool_request.request
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpcore\_async\http_proxy.py", line 343, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpcore\_async\http11.py", line 136, in handle_async_request
+    raise exc
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpcore\_async\http11.py", line 88, in handle_async_request
+    await self._send_request_body(**kwargs)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpcore\_async\http11.py", line 157, in _send_request_body
+    async for chunk in request.stream:
+        event = h11.Data(data=chunk)
+        await self._send_event(event, timeout=timeout)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpx\_multipart.py", line 299, in __aiter__
+    for chunk in self.iter_chunks():
+                 ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpx\_multipart.py", line 261, in iter_chunks
+    yield from field.render()
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpx\_multipart.py", line 221, in render
+    yield from self.render_data()
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\httpx\_multipart.py", line 214, in render_data
+    chunk = self.file.read(self.CHUNK_SIZE)
+            ^^^^^^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute 'read'
+2026-06-26 11:38:08,865 - app - ERROR - Ошибка транскрибации dialogue.mp3: headers: {'date': 'Fri, 26 Jun 2026 08:38:02 GMT', 'server': 'uvicorn', 'content-length': '129', 'content-type': 'application/json', 'vary': 'Accept-Language', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'POST, PATCH, OPTIONS, DELETE, GET, PUT', 'access-control-max-age': '600', 'strict-transport-security': 'max-age=1800;', 'x-trace-id': '471cddd8a9f122971b99bf04e4eb1ebd', 'x-region': 'us-central1', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 401, body: {'detail': {'status': 'needs_authorization', 'message': 'Neither authorization header nor xi-api-key received, please provide one.'}} - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py:57
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\elevenlabs_requests.py", line 45, in create_transcript
+    response = await eleven_labs_client.speech_to_text.convert(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\elevenlabs\speech_to_text\client.py", line 376, in convert
+    _response = await self._raw_client.convert(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<27 lines>...
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\elevenlabs\speech_to_text\raw_client.py", line 417, in convert
+    raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response_json)
+elevenlabs.core.api_error.ApiError: headers: {'date': 'Fri, 26 Jun 2026 08:38:02 GMT', 'server': 'uvicorn', 'content-length': '129', 'content-type': 'application/json', 'vary': 'Accept-Language', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'POST, PATCH, OPTIONS, DELETE, GET, PUT', 'access-control-max-age': '600', 'strict-transport-security': 'max-age=1800;', 'x-trace-id': '471cddd8a9f122971b99bf04e4eb1ebd', 'x-region': 'us-central1', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}, status_code: 401, body: {'detail': {'status': 'needs_authorization', 'message': 'Neither authorization header nor xi-api-key received, please provide one.'}}
+2026-06-29 14:19:45,105 - app - WARNING - ⚠️ Прокси http://user401975:if26ez@85.115.208.50:4990 выдал ошибку в процессе пайплайна: 'No time zone found with key Europe/Moscow'. Переключаемся... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:70
+2026-06-29 14:19:45,106 - app - WARNING - ⚠️ Прокси http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 выдал ошибку в процессе пайплайна: 'No time zone found with key Europe/Moscow'. Переключаемся... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:70
+2026-06-29 14:19:45,106 - app - WARNING - ⚠️ Прокси http://fZM3hu:eC4AoG@196.18.13.244:8000 выдал ошибку в процессе пайплайна: 'No time zone found with key Europe/Moscow'. Переключаемся... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:70
+2026-06-29 14:19:45,106 - app - ERROR - ❌ Все прокси из списка были проверены, но пайплайн не смог завершиться успешно. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:74
+2026-06-29 14:21:05,884 - app - ERROR - 💥 Критическая ошибка при обработке писем: [ALERT] Unsupported authentication mechanism. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:277
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py", line 192, in download_media_and_process_emails
+    _imap_authenticate(mail=mail, username=username, password=password, token=token)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py", line 45, in _imap_authenticate
+    mail.authenticate("XOAUTH2", lambda _: xoauth2_b64)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\imaplib.py", line 528, in authenticate
+    raise self.error(dat[-1].decode('utf-8', 'replace'))
+imaplib.IMAP4.error: [ALERT] Unsupported authentication mechanism.
+2026-06-29 14:21:05,925 - app - WARNING - ⚠️ Прокси http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 выдал ошибку в процессе пайплайна: [ALERT] Unsupported authentication mechanism.. Переключаемся... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:70
+2026-06-29 14:21:06,028 - app - ERROR - 💥 Критическая ошибка при обработке писем: [ALERT] Unsupported authentication mechanism. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:277
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py", line 192, in download_media_and_process_emails
+    _imap_authenticate(mail=mail, username=username, password=password, token=token)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py", line 45, in _imap_authenticate
+    mail.authenticate("XOAUTH2", lambda _: xoauth2_b64)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\imaplib.py", line 528, in authenticate
+    raise self.error(dat[-1].decode('utf-8', 'replace'))
+imaplib.IMAP4.error: [ALERT] Unsupported authentication mechanism.
+2026-06-29 14:21:06,042 - app - WARNING - ⚠️ Прокси http://user401975:if26ez@85.115.208.50:4990 выдал ошибку в процессе пайплайна: [ALERT] Unsupported authentication mechanism.. Переключаемся... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:70
+2026-06-29 14:21:06,121 - app - ERROR - 💥 Критическая ошибка при обработке писем: [ALERT] Unsupported authentication mechanism. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:277
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py", line 192, in download_media_and_process_emails
+    _imap_authenticate(mail=mail, username=username, password=password, token=token)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py", line 45, in _imap_authenticate
+    mail.authenticate("XOAUTH2", lambda _: xoauth2_b64)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\imaplib.py", line 528, in authenticate
+    raise self.error(dat[-1].decode('utf-8', 'replace'))
+imaplib.IMAP4.error: [ALERT] Unsupported authentication mechanism.
+2026-06-29 14:21:06,137 - app - WARNING - ⚠️ Прокси http://fZM3hu:eC4AoG@196.18.13.244:8000 выдал ошибку в процессе пайплайна: [ALERT] Unsupported authentication mechanism.. Переключаемся... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:70
+2026-06-29 14:21:06,138 - app - ERROR - ❌ Все прокси из списка были проверены, но пайплайн не смог завершиться успешно. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:74
+2026-06-29 14:23:52,159 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:63
+2026-06-29 14:23:52,251 - app - WARNING - 📭 В письме нет подходящих медиа-вложений UID=46 - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:146
+2026-06-29 14:26:51,615 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:63
+2026-06-29 14:27:57,202 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:63
+2026-06-29 14:28:16,373 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:63
+2026-06-29 14:29:31,797 - app - ERROR - Ошибка при чтении и генерации отчета GPT - 'Response' object has no attribute 'choices'. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:73
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py", line 63, in create_reformated_gpt_report
+    reformatted_text = response.choices[0].message.content
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\pydantic\main.py", line 1042, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Response' object has no attribute 'choices'
+2026-06-29 14:29:31,808 - app - ERROR - 💥 Ошибка в пайплайне для письма UID=46: 'Response' object has no attribute 'choices' - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:172
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py", line 160, in process_single_email
+    gpt_report_path = await create_reformated_gpt_report(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        api=api_config, file_path=transcript_path, gpt_api_key=gpt_api_key
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py", line 74, in create_reformated_gpt_report
+    raise e
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py", line 63, in create_reformated_gpt_report
+    reformatted_text = response.choices[0].message.content
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\pydantic\main.py", line 1042, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Response' object has no attribute 'choices'
+2026-06-29 14:29:31,811 - app - WARNING - UID=46: Ожидание перед ретраем... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:277
+2026-06-29 14:30:57,630 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:63
+2026-06-29 14:31:38,375 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:63
+2026-06-29 14:31:45,242 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:63
+2026-06-29 14:33:04,957 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:63
+2026-06-29 14:34:10,559 - app - ERROR - Ошибка при чтении и генерации отчета GPT - 'Response' object has no attribute 'content'. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:73
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py", line 63, in create_reformated_gpt_report
+    reformatted_text = response.content[0].text
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\pydantic\main.py", line 1042, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Response' object has no attribute 'content'
+2026-06-29 14:34:10,561 - app - ERROR - 💥 Ошибка в пайплайне для письма UID=48: 'Response' object has no attribute 'content' - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:172
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py", line 160, in process_single_email
+    gpt_report_path = await create_reformated_gpt_report(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        api=api_config, file_path=transcript_path, gpt_api_key=gpt_api_key
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py", line 74, in create_reformated_gpt_report
+    raise e
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py", line 63, in create_reformated_gpt_report
+    reformatted_text = response.content[0].text
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\pydantic\main.py", line 1042, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Response' object has no attribute 'content'
+2026-06-29 14:34:10,565 - app - WARNING - UID=48: Ожидание перед ретраем... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:277
+2026-06-29 14:35:11,579 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:63
+2026-06-29 15:05:28,458 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:101
+2026-06-30 14:20:37,723 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:98
+2026-06-30 15:54:24,570 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:99
+2026-06-30 16:06:40,625 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:99
+2026-06-30 16:06:53,103 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:99
+2026-06-30 16:08:40,340 - app - ERROR - Ошибка при чтении и генерации отчета GPT - 'dict' object has no attribute 'strip'. - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py:86
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py", line 76, in create_reformated_gpt_report
+    reformatted_text = data.get("report", "").strip()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'strip'
+2026-06-30 16:08:40,341 - app - ERROR - 💥 Ошибка в пайплайне для письма UID=49: 'dict' object has no attribute 'strip' - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:282
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py", line 261, in process_single_email
+    gpt_report_path, gpt_subject = await create_reformated_gpt_report(
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py", line 87, in create_reformated_gpt_report
+    raise e
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\gpt_report.py", line 76, in create_reformated_gpt_report
+    reformatted_text = data.get("report", "").strip()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'strip'
+2026-06-30 16:10:17,355 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:99
+2026-06-30 16:12:00,786 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:99
+2026-06-30 16:13:48,319 - app - ERROR - 💥 Ошибка в пайплайне для письма UID=50: Header values may not contain linefeed or carriage return characters - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:282
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py", line 271, in process_single_email
+    await asyncio.to_thread(
+        _send_email_reply_sync, smtp_settings, sender_email, gpt_subject, gpt_report_path
+    )
+  File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py", line 110, in _send_email_reply_sync
+    msg['Subject'] = Header(f"Отчет GPT: {custom_subject}", "utf-8").encode()
+    ~~~^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\email\message.py", line 449, in __setitem__
+    self._headers.append(self.policy.header_store_parse(name, val))
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\email\policy.py", line 153, in header_store_parse
+    raise ValueError("Header values may not contain linefeed "
+                     "or carriage return characters")
+ValueError: Header values may not contain linefeed or carriage return characters
+2026-06-30 16:13:59,609 - app - ERROR - 💥 Критическая ошибка при обработке писем: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot call Transaction.rollback(): the underlying connection is closed
+(Background on this error at: https://sqlalche.me/e/20/rvf5) - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:435
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 881, in rollback
+    self.await_(self._rollback_and_discard())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 862, in _rollback_and_discard
+    await self._transaction.rollback()
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\asyncpg\connresource.py", line 19, in _check
+    self._check_conn_validity(meth.__name__)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\asyncpg\connresource.py", line 41, in _check_conn_validity
+    raise exceptions.InterfaceError(
+    ...<2 lines>...
+            self.__class__.__name__, meth_name))
+asyncpg.exceptions._base.InterfaceError: cannot call Transaction.rollback(): the underlying connection is closed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1130, in _rollback_impl
+    self.engine.dialect.do_rollback(self.connection)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 712, in do_rollback
+    dbapi_connection.rollback()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 887, in rollback
+    self._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.InterfaceError: <class 'asyncpg.exceptions._base.InterfaceError'>: cannot call Transaction.rollback(): the underlying connection is closed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py", line 331, in download_media_and_process_emails
+    async with get_session() as session:
+               ~~~~~~~~~~~^^
+  File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 235, in __aexit__
+    await self.gen.athrow(value)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\database\core.py", line 76, in get_session
+    async with AsyncSessionLocal() as session:
+               ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1070, in __aexit__
+    await asyncio.shield(task)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1015, in close
+    await greenlet_spawn(self.sync_session.close)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 203, in greenlet_spawn
+    result = context.switch(value)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2529, in close
+    self._close_impl(invalidate=False)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2598, in _close_impl
+    transaction.close(invalidate)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "<string>", line 2, in close
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1422, in close
+    transaction.close()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2599, in close
+    self._do_close()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2737, in _do_close
+    self._close_impl()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2723, in _close_impl
+    self._connection_rollback_impl()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2715, in _connection_rollback_impl
+    self.connection._rollback_impl()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1132, in _rollback_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1130, in _rollback_impl
+    self.engine.dialect.do_rollback(self.connection)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 712, in do_rollback
+    dbapi_connection.rollback()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 887, in rollback
+    self._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.InterfaceError: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot call Transaction.rollback(): the underlying connection is closed
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2026-06-30 16:13:59,633 - app - WARNING - ⚠️ Прокси http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804 выдал ошибку в процессе пайплайна: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot call Transaction.rollback(): the underlying connection is closed
+(Background on this error at: https://sqlalche.me/e/20/rvf5). Переключаемся... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\main.py:80
+2026-06-30 16:13:59,791 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:99
+2026-06-30 16:15:39,363 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:99
+2026-06-30 16:15:46,144 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:99
+2026-06-30 16:15:59,997 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:99
+2026-06-30 16:18:07,103 - app - ERROR - 💥 Ошибка в пайплайне для письма UID=51: Header values may not contain linefeed or carriage return characters - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:288
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py", line 277, in process_single_email
+    await asyncio.to_thread(
+        _send_email_reply_sync, smtp_settings, sender_email, gpt_subject, gpt_report_path
+    )
+  File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py", line 116, in _send_email_reply_sync
+    msg['Subject'] = Header(f"Отчет GPT: {cleaned_subject}", "utf-8").encode()
+    ~~~^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\email\message.py", line 449, in __setitem__
+    self._headers.append(self.policy.header_store_parse(name, val))
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Python\pythoncore-3.14-64\Lib\email\policy.py", line 153, in header_store_parse
+    raise ValueError("Header values may not contain linefeed "
+                     "or carriage return characters")
+ValueError: Header values may not contain linefeed or carriage return characters
+2026-06-30 16:22:46,159 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:99
+2026-06-30 16:24:35,921 - app - ERROR - Database insertion failed: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: connection is closed
+[SQL: INSERT INTO mail_logs (mail, action, date) VALUES ($1::VARCHAR, $2::VARCHAR, $3::TIMESTAMP WITHOUT TIME ZONE) RETURNING mail_logs.id]
+[parameters: ('xzxbtl@gmail.com', 'Успешные ответ на генерацию: UID=52', datetime.datetime(2026, 6, 30, 16, 22, 45, 974495, tzinfo=zoneinfo.ZoneInfo(key='Europe/Moscow')))]
+(Background on this error at: https://sqlalche.me/e/20/rvf5) - C:\Users\user\PycharmProjects\TranscribeDialogs\app\database\core.py:70
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 526, in _prepare_and_execute
+    prepared_stmt, attributes = await adapt_connection._prepare(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        operation, self._invalidate_schema_cache_asof
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 773, in _prepare
+    prepared_stmt = await self._connection.prepare(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        operation, name=self._prepared_statement_name_func()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\asyncpg\connection.py", line 638, in prepare
+    return await self._prepare(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\asyncpg\connection.py", line 654, in _prepare
+    self._check_open()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\asyncpg\connection.py", line 1605, in _check_open
+    raise exceptions.InterfaceError('connection is closed')
+asyncpg.exceptions._base.InterfaceError: connection is closed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 585, in execute
+    self._adapt_connection.await_(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._prepare_and_execute(operation, parameters)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 563, in _prepare_and_execute
+    self._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 513, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.InterfaceError: <class 'asyncpg.exceptions._base.InterfaceError'>: connection is closed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\database\core.py", line 68, in add_log
+    await session.commit()
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 999, in commit
+    await greenlet_spawn(self.sync_session.commit)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 203, in greenlet_spawn
+    result = context.switch(value)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 585, in execute
+    self._adapt_connection.await_(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._prepare_and_execute(operation, parameters)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 563, in _prepare_and_execute
+    self._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 513, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.InterfaceError: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: connection is closed
+[SQL: INSERT INTO mail_logs (mail, action, date) VALUES ($1::VARCHAR, $2::VARCHAR, $3::TIMESTAMP WITHOUT TIME ZONE) RETURNING mail_logs.id]
+[parameters: ('xzxbtl@gmail.com', 'Успешные ответ на генерацию: UID=52', datetime.datetime(2026, 6, 30, 16, 22, 45, 974495, tzinfo=zoneinfo.ZoneInfo(key='Europe/Moscow')))]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2026-06-30 16:30:00,648 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:98
+2026-06-30 16:30:07,404 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:98
+2026-06-30 16:31:55,807 - app - ERROR - Database insertion failed: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $3: datetime.datetime(2026, 6, 30, 16, 30, 7... (can't subtract offset-naive and offset-aware datetimes)
+[SQL: INSERT INTO mail_logs (mail, action, date) VALUES ($1::VARCHAR, $2::VARCHAR, $3::TIMESTAMP WITHOUT TIME ZONE) RETURNING mail_logs.id]
+[parameters: ('xzxbtl@gmail.com', 'Успешные ответ на генерацию: UID=52', datetime.datetime(2026, 6, 30, 16, 30, 7, 267508, tzinfo=zoneinfo.ZoneInfo(key='Europe/Moscow')))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi) - C:\Users\user\PycharmProjects\TranscribeDialogs\app\database\core.py:75
+Traceback (most recent call last):
+  File "asyncpg/protocol/prepared_stmt.pyx", line 175, in asyncpg.protocol.protocol.PreparedStatementState._encode_bind_msg
+  File "asyncpg/protocol/codecs/base.pyx", line 251, in asyncpg.protocol.protocol.Codec.encode
+  File "asyncpg/protocol/codecs/base.pyx", line 153, in asyncpg.protocol.protocol.Codec.encode_scalar
+  File "asyncpg/pgproto/codecs/datetime.pyx", line 152, in asyncpg.pgproto.pgproto.timestamp_encode
+TypeError: can't subtract offset-naive and offset-aware datetimes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 550, in _prepare_and_execute
+    self._rows = deque(await prepared_stmt.fetch(*parameters))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\asyncpg\prepared_stmt.py", line 177, in fetch
+    data = await self.__bind_execute(args, 0, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\asyncpg\prepared_stmt.py", line 268, in __bind_execute
+    data, status, _ = await self.__do_execute(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+        lambda protocol: protocol.bind_execute(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            self._state, args, '', limit, True, timeout))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\asyncpg\prepared_stmt.py", line 257, in __do_execute
+    return await executor(protocol)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 184, in bind_execute
+  File "asyncpg/protocol/prepared_stmt.pyx", line 204, in asyncpg.protocol.protocol.PreparedStatementState._encode_bind_msg
+asyncpg.exceptions.DataError: invalid input for query argument $3: datetime.datetime(2026, 6, 30, 16, 30, 7... (can't subtract offset-naive and offset-aware datetimes)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 585, in execute
+    self._adapt_connection.await_(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._prepare_and_execute(operation, parameters)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 563, in _prepare_and_execute
+    self._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 513, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.Error: <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $3: datetime.datetime(2026, 6, 30, 16, 30, 7... (can't subtract offset-naive and offset-aware datetimes)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\app\database\core.py", line 73, in add_log
+    await session.commit()  # Сохраняем и закрываем соединение
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 999, in commit
+    await greenlet_spawn(self.sync_session.commit)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 203, in greenlet_spawn
+    result = context.switch(value)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1234, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 585, in execute
+    self._adapt_connection.await_(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._prepare_and_execute(operation, parameters)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 563, in _prepare_and_execute
+    self._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 513, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\user\PycharmProjects\TranscribeDialogs\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 797, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.DBAPIError: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $3: datetime.datetime(2026, 6, 30, 16, 30, 7... (can't subtract offset-naive and offset-aware datetimes)
+[SQL: INSERT INTO mail_logs (mail, action, date) VALUES ($1::VARCHAR, $2::VARCHAR, $3::TIMESTAMP WITHOUT TIME ZONE) RETURNING mail_logs.id]
+[parameters: ('xzxbtl@gmail.com', 'Успешные ответ на генерацию: UID=52', datetime.datetime(2026, 6, 30, 16, 30, 7, 267508, tzinfo=zoneinfo.ZoneInfo(key='Europe/Moscow')))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2026-06-30 16:33:56,435 - app - WARNING - ⚠️ Сервер не поддерживает токен (XOAUTH2). Пробуем авторизацию по паролю... - C:\Users\user\PycharmProjects\TranscribeDialogs\app\api\imap_reader.py:98
