@@ -1,0 +1,418 @@
+[33mcommit 7f38613475d00015c385c11dae01e71d00fe0435[m
+Author: xzxbtl <xzxbtl@mail.ru>
+Date:   Tue Jun 30 16:37:15 2026 +0300
+
+    working var on 30.06.2026
+
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..eb3b107[m
+[1m--- /dev/null[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1,20 @@[m
+[32m+[m[32m**pycache**/[m
+[32m+[m[32m*.py[cod][m
+[32m+[m[32m*$py.class[m
+[32m+[m
+[32m+[m[32m*.log[m
+[32m+[m[32mlogs/[m
+[32m+[m[32m*.out[m
+[32m+[m
+[32m+[m[32m*.tmp[m
+[32m+[m[32m*.temp[m
+[32m+[m[32m*.swp[m
+[32m+[m[32m.DS_Store[m
+[32m+[m
+[32m+[m[32m.vscode/[m
+[32m+[m[32m.idea/[m
+[32m+[m[32m*.iml[m
+[32m+[m
+[32m+[m
+[32m+[m[32m*.sqlite3[m
+[32m+[m[32m*.db[m
+\ No newline at end of file[m
+[1mdiff --git a/__init__.py b/__init__.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/__pycache__/__init__.cpython-314.pyc b/__pycache__/__init__.cpython-314.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..991c71a[m
+Binary files /dev/null and b/__pycache__/__init__.cpython-314.pyc differ
+[1mdiff --git a/__pycache__/shared_dir.cpython-314.pyc b/__pycache__/shared_dir.cpython-314.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..08f8d45[m
+Binary files /dev/null and b/__pycache__/shared_dir.cpython-314.pyc differ
+[1mdiff --git a/api/__init__.py b/api/__init__.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/api/__pycache__/__init__.cpython-314.pyc b/api/__pycache__/__init__.cpython-314.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4b7327f[m
+Binary files /dev/null and b/api/__pycache__/__init__.cpython-314.pyc differ
+[1mdiff --git a/api/__pycache__/api_config.cpython-314.pyc b/api/__pycache__/api_config.cpython-314.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9c5f512[m
+Binary files /dev/null and b/api/__pycache__/api_config.cpython-314.pyc differ
+[1mdiff --git a/api/__pycache__/elevenlabs_requests.cpython-314.pyc b/api/__pycache__/elevenlabs_requests.cpython-314.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1322b06[m
+Binary files /dev/null and b/api/__pycache__/elevenlabs_requests.cpython-314.pyc differ
+[1mdiff --git a/api/__pycache__/gpt_report.cpython-314.pyc b/api/__pycache__/gpt_report.cpython-314.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..639f399[m
+Binary files /dev/null and b/api/__pycache__/gpt_report.cpython-314.pyc differ
+[1mdiff --git a/api/__pycache__/imap_reader.cpython-314.pyc b/api/__pycache__/imap_reader.cpython-314.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..06104f3[m
+Binary files /dev/null and b/api/__pycache__/imap_reader.cpython-314.pyc differ
+[1mdiff --git a/api/api_config.py b/api/api_config.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..51eb511[m
+[1m--- /dev/null[m
+[1m+++ b/api/api_config.py[m
+[36m@@ -0,0 +1,80 @@[m
+[32m+[m[32mimport asyncio[m
+[32m+[m[32mimport time[m
+[32m+[m[32mfrom typing import Any, AsyncGenerator[m
+[32m+[m[32mfrom httpx import AsyncClient, Timeout[m
+[32m+[m[32mfrom contextlib import asynccontextmanager[m
+[32m+[m
+[32m+[m
+[32m+[m[32mclass APIConfig:[m
+[32m+[m[32m    def __init__(self):[m
+[32m+[m[32m        self.timeout = Timeout(600)[m
+[32m+[m[32m        self.proxy_pool = [[m
+[32m+[m[32m            "http://user401975:if26ez@85.115.208.50:4990",[m
+[32m+[m[32m            "http://fZM3hu:eC4AoG@196.18.13.244:8000",[m
+[32m+[m[32m            "http://URwNZhR2C:7mGvYF6KK@154.81.198.239:64804"[m
+[32m+[m[32m                           ][m
+[32m+[m[32m        self.client = None[m
+[32m+[m[32m        self.url_to_ping = "https://api.ipify.org"[m
+[32m+[m
+[32m+[m[32m        self.working_proxy = [][m
+[32m+[m
+[32m+[m
+[32m+[m[32m    def create_client(self, proxy: str) -> AsyncClient:[m
+[32m+[m[32m        if self.client is None:[m
+[32m+[m[32m            self.client = AsyncClient(timeout=self.timeout, proxy=proxy)[m
+[32m+[m[32m        return self.client[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    @asynccontextmanager[m
+[32m+[m[32m    async def get_session(self) -> AsyncGenerator[Any, Any]:[m
+[32m+[m[32m        async with self.client() as session:[m
+[32m+[m[32m            yield session[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    async def get_actual_proxy_list(self):[m
+[32m+[m[32m        await self.ping_proxy_list()[m
+[32m+[m[32m        return self.working_proxy[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    async def ping_proxy(self, proxy: str):[m
+[32m+[m[32m        start = time.perf_counter()[m
+[32m+[m
+[32m+[m[32m        try:[m
+[32m+[m[32m            async with AsyncClient([m
+[32m+[m[32m                proxy=proxy,[m
+[32m+[m[32m                timeout=10[m
+[32m+[m[32m            ) as client:[m
+[32m+[m
+[32m+[m[32m                response = await client.get(self.url_to_ping)[m
+[32m+[m
+[32m+[m[32m                latency = round([m
+[32m+[m[32m                    (time.perf_counter() - start) * 1000,[m
+[32m+[m[32m                    2[m
+[32m+[m[32m                )[m
+[32m+[m
+[32m+[m[32m                return {[m
+[32m+[m[32m                    "proxy": proxy,[m
+[32m+[m[32m                    "latency": latency,[m
+[32m+[m[32m                    "ip": response.text.strip()[m
+[32m+[m[32m                }[m
+[32m+[m
+[32m+[m[32m        except Exception:[m
+[32m+[m[32m            return None[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    async def ping_proxy_list(self):[m
+[32m+[m[32m        results = await asyncio.gather([m
+[32m+[m[32m            *(self.ping_proxy(proxy) for proxy in self.proxy_pool)[m
+[32m+[m[32m        )[m
+[32m+[m
+[32m+[m[32m        working = [r for r in results if r is not None][m
+[32m+[m[32m        working.sort(key=lambda x: x["latency"])[m
+[32m+[m
+[32m+[m[32m        self.working_proxy = [[m
+[32m+[m[32m            proxy_info["proxy"][m
+[32m+[m[32m            for proxy_info in working[m
+[32m+[m[32m        ][m
+[32m+[m
+[32m+[m[32m        return self.working_proxy[m
+[32m+[m
+[32m+[m
+[1mdiff --git a/api/elevenlabs_requests.py b/api/elevenlabs_requests.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7e8a66b[m
+[1m--- /dev/null[m
+[1m+++ b/api/elevenlabs_requests.py[m
+[36m@@ -0,0 +1,89 @@[m
+[32m+[m[32mfrom elevenlabs.client import AsyncElevenLabs[m
+[32m+[m[32mfrom app.api.api_config import APIConfig[m
+[32m+[m[32mfrom app.utils.loggs.logger_conf import logger[m
+[32m+[m[32mfrom app.shared_dir import DIR_TO_TEXT[m
+[32m+[m[32mfrom pathlib import Path[m
+[32m+[m
+[32m+[m
+[32m+[m[32masync def create_transcript([m
+[32m+[m[32m        api: APIConfig,[m
+[32m+[m[32m        file_path: Path,[m
+[32m+[m[32m        x_api_key: str = None[m
+[32m+[m[32m):[m
+[32m+[m[32m    DIR_TO_TEXT.mkdir(parents=True, exist_ok=True)[m
+[32m+[m
+[32m+[m[32m    if not file_path or not file_path.exists() or not file_path.is_file():[m
+[32m+[m[32m        logger.warning(f"Файл для транскрибации не найден: {file_path}")[m
+[32m+[m[32m        return None[m
+[32m+[m
+[32m+[m[32m    api_client = api.client[m
+[32m+[m
+[32m+[m[32m    try:[m
+[32m+[m[32m        logger.debug("Попытка создания ElevenLabs клиента.")[m
+[32m+[m[32m        eleven_labs_client = AsyncElevenLabs([m
+[32m+[m[32m            httpx_client=api_client,[m
+[32m+[m[32m            timeout=api.timeout,[m
+[32m+[m[32m            api_key=x_api_key[m
+[32m+[m[32m        )[m
+[32m+[m[32m        logger.info("Успешное создание клиента ElevenLabs.")[m
+[32m+[m
+[32m+[m[32m    except Exception as e:[m
+[32m+[m[32m        logger.error(f"Ошибка при создании клиента ElevenLabs. - {e}", exc_info=True)[m
+[32m+[m[32m        raise e[m
+[32m+[m
+[32m+[m[32m    try:[m
+[32m+[m[32m        logger.debug(f"Начало обработки файла: {file_path.name}.")[m
+[32m+[m
+[32m+[m[32m        with open(file_path, "rb") as audio_file:[m
+[32m+[m[32m            response = await eleven_labs_client.speech_to_text.convert([m
+[32m+[m[32m                model_id="scribe_v2",[m
+[32m+[m[32m                language_code="ru",[m
+[32m+[m[32m                tag_audio_events=False,[m
+[32m+[m[32m                diarize=True,[m
+[32m+[m[32m                file=audio_file[m
+[32m+[m[32m            )[m
+[32m+[m
+[32m+[m[32m        dialogue_lines = [][m
+[32m+[m[32m        current_speaker = None[m
+[32m+[m[32m        current_phrase = [][m
+[32m+[m
+[32m+[m[32m        for word_info in response.words:[m
+[32m+[m[32m            spk_id = word_info.speaker_id if word_info.speaker_id else "unknown"[m
+[32m+[m
+[32m+[m[32m            if spk_id.startswith("speaker_"):[m
+[32m+[m[32m                try:[m
+[32m+[m[32m                    spk_num = int(spk_id.split("_")[1]) + 1[m
+[32m+[m[32m                    formatted_speaker = f"Спикер {spk_num}"[m
+[32m+[m[32m                except ValueError:[m
+[32m+[m[32m                    formatted_speaker = spk_id[m
+[32m+[m[32m            else:[m
+[32m+[m[32m                formatted_speaker = "Спикер 1" if spk_id == "unknown" else spk_id[m
+[32m+[m
+[32m+[m[32m            if current_speaker != formatted_speaker:[m
+[32m+[m[32m                if current_speaker is not None:[m
+[32m+[m[32m                    dialogue_lines.append(f"{current_speaker}: {''.join(current_phrase).strip()}")[m
+[32m+[m[32m                current_speaker = formatted_speaker[m
+[32m+[m[32m                current_phrase = [word_info.text][m
+[32m+[m[32m            else:[m
+[32m+[m[32m                current_phrase.append(word_info.text)[m
+[32m+[m
+[32m+[m[32m        if current_speaker is not None:[m
+[32m+[m[32m            dialogue_lines.append(f"{current_speaker}: {''.join(current_phrase).strip()}")[m
+[32m+[m
+[32m+[m[32m        final_text = "\n".join(dialogue_lines)[m
+[32m+[m
+[32m+[m[32m        output_txt_path = DIR_TO_TEXT / f"{file_path.stem}.txt"[m
+[32m+[m
+[32m+[m[32m        with open(output_txt_path, "w", encoding="utf-8") as txt_file:[m
+[32m+[m[32m            txt_file.write(final_text)[m
+[32m+[m
+[32m+[m[32m        logger.info(f"Успешно обработан файл: {file_path.name}. Текст сохранен в {output_txt_path.name}")[m
+[32m+[m[32m        return output_txt_path[m
+[32m+[m
+[32m+[m[32m    except Exception as e:[m
+[32m+[m[32m        logger.error([m
+[32m+[m[32m            f"Ошибка транскрибации файла {file_path.name}: {e}",[m
+[32m+[m[32m            exc_info=True[m
+[32m+[m[32m        )[m
+[32m+[m[32m        raise e[m
+[32m+[m
+[1mdiff --git a/api/gpt_report.py b/api/gpt_report.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..646ea25[m
+[1m--- /dev/null[m
+[1m+++ b/api/gpt_report.py[m
+[36m@@ -0,0 +1,108 @@[m
+[32m+[m[32mimport json[m
+[32m+[m[32mfrom datetime import datetime[m
+[32m+[m[32mfrom pathlib import Path[m
+[32m+[m[32mfrom app.api.api_config import APIConfig[m
+[32m+[m[32mfrom app.shared_dir import DIR_TO_REFORMATED_TEXT[m
+[32m+[m[32mfrom openai import AsyncOpenAI[m
+[32m+[m[32mfrom app.utils.loggs.logger_conf import logger[m
+[32m+[m
+[32m+[m[32mSYSTEM_PROMPT = """[m
+[32m+[m[32mYou are a professional business analyst and data summarizer.[m[41m [m
+[32m+[m[32mYour task is to generate a comprehensive, structured report based on the provided dialogue.[m
+[32m+[m
+[32m+[m[32mYou MUST respond with a strict, valid JSON object containing exactly two keys: "subject_summary" and "report".[m
+[32m+[m
+[32m+[m[32m1. "subject_summary": A very short, concise sentence in Russian (5-7 words max) describing the core topic of the meeting/dialogue. This will be used as an email subject line. Examples: "Обсуждение дизайна мобильного приложения", "Правки по договору поставок", "Интервью с кандидатом на вакансию". Do not use generic phrases like "Краткий отчет" or "Итоги созвона".[m
+[32m+[m[32m2. "report": The full analytical report in Russian structured exactly as follows:[m
+[32m+[m[32m   1. **Краткое резюме**: A concise 2-3 sentence overview of the dialogue's main topic and final outcome.[m
+[32m+[m[32m   2. **Ключевые темы обсуждения**: A bulleted list of the core topics discussed.[m
+[32m+[m[32m   3. **Принятые решения и план действий**: Clear list of agreed-upon conclusions.[m
+[32m+[m[32m   4. **Общие выводы**: A brief closing summary.[m
+[32m+[m
+[32m+[m[32mCRITICAL GUIDELINES:[m
+[32m+[m[32m- Your response must be parsed as JSON. Do not include Markdown blocks like ```json ... ``` around your raw JSON output.[m
+[32m+[m[32m- If you receive additional instructions under "# User Instruction" (e.g., specific words to add, formatting, greetings), you MUST strictly execute them inside the "report" field.[m
+[32m+[m[32m- Be objective, precise, and concise.[m
+[32m+[m[32m- Do not invent any facts not mentioned in the text.[m
+[32m+[m[32m"""[m
+[32m+[m
+[32m+[m
+[32m+[m[32masync def create_reformated_gpt_report([m
+[32m+[m[32m        api: APIConfig,[m
+[32m+[m[32m        file_path: Path = None,[m
+[32m+[m[32m        prompt: str = None,[m
+[32m+[m[32m        gpt_api_key: str = None,[m
+[32m+[m[32m        email_date: str = datetime.now().strftime("%Y-%m-%d"),[m
+[32m+[m[32m) -> tuple[Path, str]:[m
+[32m+[m[32m    openai_client = None[m
+[32m+[m[32m    api_client = api.client[m
+[32m+[m[32m    DIR_TO_REFORMATED_TEXT.mkdir(parents=True, exist_ok=True)[m
+[32m+[m
+[32m+[m[32m    try:[m
+[32m+[m[32m        logger.debug("Попытка создания клиента GPT.")[m
+[32m+[m[32m        openai_client = AsyncOpenAI([m
+[32m+[m[32m            api_key=gpt_api_key,[m
+[32m+[m[32m            http_client=api_client[m
+[32m+[m[32m        )[m
+[32m+[m[32m        logger.info("Успешное создание GPT клиента.")[m
+[32m+[m
+[32m+[m[32m    except Exception as e:[m
+[32m+[m[32m        logger.error(f"Ошибка при создании GPT клиента - {e}.", exc_info=True)[m
+[32m+[m[32m        raise e[m
+[32m+[m
+[32m+[m[32m    try:[m
+[32m+[m[32m        with open(file_path, "r", encoding="utf-8") as file:[m
+[32m+[m[32m            document_text = file.read()[m
+[32m+[m
+[32m+[m[32m        system_prompt = f"# SYSTEM PROMPT\n{SYSTEM_PROMPT}"[m
+[32m+[m
+[32m+[m[32m        user_content = ""[m
+[32m+[m[32m        if prompt:[m
+[32m+[m[32m            user_content += f"# User Instruction: {prompt}\n\n"[m
+[32m+[m[32m        user_content += f"# Document Text:\n{document_text}"[m
+[32m+[m
+[32m+[m[32m        response = await openai_client.chat.completions.create([m
+[32m+[m[32m            model="gpt-5.2",[m
+[32m+[m[32m            messages=[[m
+[32m+[m[32m                {"role": "system", "content": system_prompt},[m
+[32m+[m[32m                {"role": "user", "content": user_content}[m
+[32m+[m[32m            ],[m
+[32m+[m[32m            response_format={"type": "json_object"}[m
+[32m+[m[32m        )[m
+[32m+[m[32m        raw_json = response.choices[0].message.content[m
+[32m+[m[32m        data = json.loads(raw_json)[m
+[32m+[m
+[32m+[m[32m        subject_summary = data.get("subject_summary", "Аналитический отчет").strip()[m
+[32m+[m[32m        if isinstance(subject_summary, str):[m
+[32m+[m[32m            subject_summary = subject_summary.strip()[m
+[32m+[m[32m        else:[m
+[32m+[m[32m            subject_summary = str(subject_summary)[m
+[32m+[m
+[32m+[m[32m        report_data = data.get("report", "")[m
+[32m+[m[32m        if isinstance(report_data, dict):[m
+[32m+[m[32m            lines = [][m
+[32m+[m[32m            for key, value in report_data.items():[m
+[32m+[m[32m                lines.append(f"## {key}")[m
+[32m+[m[32m                if isinstance(value, list):[m
+[32m+[m[32m                    for item in value:[m
+[32m+[m[32m                        lines.append(f"- {item}")[m
+[32m+[m[32m                else:[m
+[32m+[m[32m                    lines.append(str(value))[m
+[32m+[m[32m                lines.append("")[m
+[32m+[m[32m            reformatted_text = "\n".join(lines).strip()[m
+[32m+[m[32m        else:[m
+[32m+[m[32m            reformatted_text = str(report_data).strip()[m
+[32m+[m
+[32m+[m[32m        output_file_path = DIR_TO_REFORMATED_TEXT / f"reformated_{file_path.stem}_{email_date}.txt"[m
+[32m+[m
+[32m+[m[32m        with open(output_file_path, "w", encoding="utf-8") as output_file:[m
+[32m+[m[32m            output_file.write(reformatted_text)[m
+[32m+[m
+[32m+[m[32m        logger.info(f"Отформатированный отчет успешно сохранен в: {output_file_path}.")[m
+[32m+[m[32m        return output_file_path, subject_summary[m
+[32m+[m
+[32m+[m[32m    except Exception as e:[m
+[32m+[m[32m        logger.error(f"Ошибка при чтении и генерации отчета GPT - {e}.", exc_info=True)[m
+[32m+[m[32m        raise e[m
+[32m+[m
+[32m+[m
+[1mdiff --git a/api/imap_reader.py b/api/imap_reader.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..757dcfb[m
+[1m--- /dev/null[m
+[1m+++ b/api/imap_reader.py[m
+[36m@@ -0,0 +1,444 @@[m
+[32m+[m[32mimport base64[m
+[32m+[m[32mimport imaplib[m
+[32m+[m[32mimport shutil[m
+[32m+[m[32mimport smtplib[m
+[32m+[m[32mimport email[m
+[32m+[m[32mimport uuid[m
+[32m+[m[32mimport asyncio[m
+[32m+[m[32mimport re[m
+[32m+[m[32mfrom datetime import datetime, timedelta[m
+[32m+[m[32mfrom email.header import decode_header[m
+[32m+[m[32mfrom email.utils import parseaddr, parsedate_to_datetime[m
+[32m+[m[32mfrom email.message import EmailMessage[m
+[32m+[m[32mfrom email.policy import default[m
+[32m+[m[32mfrom pathlib import Path[m
+[32m+[m[32mfrom zoneinfo import ZoneInfo[m
+[32m+[m[32mfrom app.api.elevenlabs_requests import create_transcript[m
+[32m+[m[32mfrom app.api.gpt_report import create_reformated_gpt_report[m
+[32m+[m[32mfrom app.database.core import take_all_mails, add_log[m
+[32m+[m[32mfrom app.utils.loggs.logger_conf import logger[m
+[32m+[m[32mfrom app.shared_dir import DIR_TO_MEDIA, DIR_TO_REFORMATED_TEXT as DIR_READY_TO_UPLOAD, DIR_TO_TEXT, \[m
+[32m+[m[32m    DIR_TO_REFORMATED_TEXT[m
+[32m+[m[32mfrom app.api.api_config import APIConfig[m
+[32m+[m
+[32m+[m[32mMEDIA_EXTENSIONS = {[m
+[32m+[m[32m    ".mp3", ".wav", ".m4a", ".aac", ".ogg", ".flac",[m
+[32m+[m[32m    ".mp4", ".mov", ".avi", ".mkv", ".webm",[m
+[32m+[m[32m}[m
+[32m+[m[32mCLOUD_PATTERNS = {[m
+[32m+[m[32m    "google": re.compile(r"drive\.google\.com/(?:file/d/|open\?id=)([-_a-zA-Z0-9]+)"),[m
+[32m+[m[32m    "yandex": re.compile(r"disk\.yandex\.ru/d/([-_a-zA-Z0-9]+)"),[m
+[32m+[m[32m    "mailru": re.compile(r"cloud\.mail\.ru/public/([-a-zA-Z0-9]+)/([-a-zA-Z0-9]+)")[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32masync def download_from_cloud(full_body: str, api_client) -> Path | None:[m
+[32m+[m[32m    """Определяет сервис и скачивает файл по ссылке."""[m
+[32m+[m
+[32m+[m[32m    # 1. Google Drive (уже есть логика с download_warning)[m
+[32m+[m[32m    match_google = CLOUD_PATTERNS["google"].search(full_body)[m
+[32m+[m[32m    if match_google:[m
+[32m+[m[32m        file_id = match_google.group(1)[m
+[32m+[m[32m        save_path = DIR_TO_MEDIA / f"{uuid.uuid4().hex}.mp3"[m
+[32m+[m[32m        if await download_from_google_drive(file_id, api_client, save_path):[m
+[32m+[m[32m            return save_path[m
+[32m+[m
+[32m+[m[32m    # 2. Яндекс.Диск (требует Public API)[m
+[32m+[m[32m    match_yandex = CLOUD_PATTERNS["yandex"].search(full_body)[m
+[32m+[m[32m    if match_yandex:[m
+[32m+[m[32m        public_key = match_yandex.group(1)[m
+[32m+[m[32m  

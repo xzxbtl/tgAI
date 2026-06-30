@@ -18,3 +18,14 @@ logs/
 
 *.sqlite3
 *.db
+
+env/
+venv/
+.venv/
+ENV/
+envs/
+
+
+.env
+.env.*
+*.env
